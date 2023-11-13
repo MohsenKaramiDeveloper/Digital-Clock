@@ -85,3 +85,15 @@
     content: 'SEC';
 }
 
+.change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.change h2{
+    padding-right: 10px;
+}
+
+
