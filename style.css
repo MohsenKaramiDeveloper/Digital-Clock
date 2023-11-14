@@ -85,9 +85,19 @@
     content: 'SEC';
 }
 
-select{
-    width: 100px;
-    height: 50px;
-    
+.change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+.change h2{
+    padding-right: 10px;
+}
+
+.change input{
+    cursor: pointer;
+}
+
+

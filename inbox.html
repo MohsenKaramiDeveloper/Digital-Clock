@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="hero">
-        <div class="container">
+        <div id="text" class="container">
             <div class="clock">
                 <span id="hrs">00</span>
                 <span>:</span>
@@ -17,7 +17,10 @@
                 <span>:</span>
                 <span id="sec">00</span>
             </div>
-            <select name="color" id=""></select>
+            <div class="change">
+                <h2 >Change Color ></h2>
+                <input type="color" oninput="changeColor(event)">
+            </div>
             
         </div>
         
@@ -28,4 +31,3 @@
 </html>
 
 
-<!-- test -->
