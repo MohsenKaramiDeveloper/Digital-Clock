@@ -18,5 +18,7 @@ function changeColor(event){
     text.style.color=event.target.value;
 }
 
-let select = getElementById('select')
+let select = document.getElementById('test');{
+    console.log('mohsen')};
+
 
