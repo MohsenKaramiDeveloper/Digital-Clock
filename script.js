@@ -1,24 +1,37 @@
-let hrs = document.getElementById("hrs")
-let min = document.getElementById("min")
-let sec = document.getElementById("sec")
+let hrs = document.getElementById("hrs");
+let min = document.getElementById("min");
+let sec = document.getElementById("sec");
+let timeZoneSelector = document.getElementById("select");
 
-setInterval(()=>{
+// Function to update the clock based on the selected time zone
+function updateClock() {
     let currentTime = new Date();
+    let selectedTimeZone = timeZoneSelector.value;
 
-hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
-min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
-sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+    let options = {
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        timeZone: selectedTimeZone
+    };
 
+    let formatter = new Intl.DateTimeFormat('en-US', options);
+    let timeString = formatter.format(currentTime);
 
-},1000)
+    let [hours, minutes, seconds] = timeString.split(':');
 
-
-var text = document.getElementById('text');
-function changeColor(event){
-    text.style.color=event.target.value;
+    hrs.innerHTML = hours;
+    min.innerHTML = minutes;
+    sec.innerHTML = seconds;
 }
 
-let select = document.getElementById('test');{
-    console.log('mohsen')};
+// Initial update
+updateClock();
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Event listener for the time zone selector
+timeZoneSelector.addEventListener("change", updateClock);
 
 
