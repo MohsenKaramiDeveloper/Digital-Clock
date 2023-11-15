@@ -35,3 +35,4 @@ setInterval(updateClock, 1000);
 timeZoneSelector.addEventListener("change", updateClock);
 
 
+// this is the EI varsion on my request
