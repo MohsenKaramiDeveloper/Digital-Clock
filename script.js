@@ -13,5 +13,9 @@ sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
 },1000)
 
 
+var text = document.getElementById('text');
+function changeColor(event){
+    text.style.color=event.target.value;
+}
 
 
