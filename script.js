@@ -18,4 +18,5 @@ function changeColor(event){
     text.style.color=event.target.value;
 }
 
+let select = getElementById('select')
 
