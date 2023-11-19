@@ -18,11 +18,7 @@ function changeColor(event){
     text.style.color=event.target.value;
 }
 
-//1comment
-//var text = document.getElementById('text');
-function changeColor(event){
-    text.style.color=event.target.value;
-}
+
 
 
 
