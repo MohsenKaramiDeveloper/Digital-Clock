@@ -18,5 +18,3 @@ function changeColor(event){
     text.style.color=event.target.value;
 }
 
-
-// comment2
