@@ -18,6 +18,4 @@ function changeColor(event){
     text.style.color=event.target.value;
 }
 
-
-
-//comment for fase 1
+delete fase 1
